@@ -6,6 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// GET session-in & session-out
+
 router.get('/session-in', function(req, res) {
   req.session.maVariable = "Be bop a lula";
   console.log(req.session);
